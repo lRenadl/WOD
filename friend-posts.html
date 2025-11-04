@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friend's Wishlist - @giftlover</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* ================================================= */
+        /* FRIEND PROFILE / WISHLIST ACTIONS (Reserve & Contribute) */
+        /* ================================================= */
+
+        .friend-action-btn {
+            background: #f5c0d3;
+            border: none;
+            border-radius: 25px;
+            color: white;
+            padding: 8px 20px;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(255, 111, 97, 0.4);
+        }
+
+        .friend-action-btn:hover {
+            background: #e55c50;
+            transform: translateY(-2px);
+        }
+
+      
+        .action-btn {
+          
+            min-width: 100%;
+            padding: 12px 20px;
+            font-weight: 700;
+            font-size: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            display: flex; 
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+        }
+        
+     
+
+      
+       
+
+        
+       
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-icons">
+            <a href="#" class="sidebar-icon logo-icon">
+                <img src="images/Box Logo (2) 2.png" alt="WOD Logo" class="sidebar-logo" />
+            </a>
+            <a href="posts.html" class="sidebar-icon">
+                <img src="images/icons/home.svg" alt="Home" class="sidebar-icon-img" />
+            </a>
+            <a href="calendar.html" class="sidebar-icon">
+                <img src="images/icons/calender.svg" alt="calendar" class="sidebar-icon-img" />
+            </a>
+            <a href="profile.html" class="sidebar-icon">
+                <img src="images/icons/profile.svg" alt="Profile" class="sidebar-icon-img" />
+            </a>
+                    <a href="group_dashboard.html" class="sidebar-icon">
+                        <img src="images/icons/groups.png" alt="Groups" class="sidebar-icon-img" />
+                    </a>
+        </div>
+    </div>
+
+    <main class="profile-container">
+        <section class="profile-header">
+            <div class="profile-pic-container">
+                <img src="images/profile-pic.jpg" alt="Profile Picture" class="profile-pic">
+            </div>
+
+            <div class="profile-info">
+                <div class="profile-name-section">
+                    <h1 class="username">@SarahJohnson</h1>
+                    <button class="friend-action-btn">Add Friend</button>
+                </div>
+
+                <h2 class="full-name">Sarah Johnson</h2>
+                <p class="bio">Gift enthusiast & creative wrapping ideas. Sharing my favorite finds and DIY gift boxes!
+                    🎁✨</p>
+
+                <div class="profile-stats">
+                    <div class="stat">
+                        <span class="stat-number">24</span>
+                        <span class="stat-label">Posts</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">86</span>
+                        <span class="stat-label">Friends</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">12</span>
+                        <span class="stat-label">Wishlist</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="profile-tabs">
+            <div class="tabs-container">
+                <a href="friend-posts.html" class="tab" data-tab="posts">
+                    <i class="fas fa-gift"></i>  Posts
+                </a>
+                <a href="friend-wishlist.html" class="tab active" data-tab="wishlist">
+                    <i class="fas fa-heart"></i> Wishlist
+                </a>
+            </div>
+        </section>
+
+        
+      
+
+        <!-- Posts Grid -->
+        <section class="profile-posts" id="posts-tab">
+            <div class="posts-grid">
+                <!-- Post 1 -->
+                <div class="profile-post">
+                    <img src="images/_ (1).jpeg" alt="Gift box">
+                    <div class="post-overlay">
+                        <div class="post-actions">
+                            <button class="action-btn like-btn">
+                                <i class="far fa-heart"></i>
+                                <span>24</span>
+                            </button>
+                            <button class="action-btn wishlist-btn">
+                                <i class="far fa-bookmark"></i>
+                                <span>Add to Wishlist</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post 2 -->
+                <div class="profile-post">
+                    <img src="images/_ (2).jpeg" alt="Gift box">
+                    <div class="post-overlay">
+                        <div class="post-actions">
+                            <button class="action-btn like-btn">
+                                <i class="far fa-heart"></i>
+                                <span>18</span>
+                            </button>
+                            <button class="action-btn wishlist-btn">
+                                <i class="far fa-bookmark"></i>
+                                <span>Add to Wishlist</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post 3 -->
+                <div class="profile-post">
+                    <img src="images/_ (3).jpeg" alt="Gift box">
+                    <div class="post-overlay">
+                        <div class="post-actions">
+                            <button class="action-btn like-btn">
+                                <i class="far fa-heart"></i>
+                                <span>32</span>
+                            </button>
+                            <button class="action-btn wishlist-btn">
+                                <i class="far fa-bookmark"></i>
+                                <span>Add to Wishlist</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post 4 -->
+                <div class="profile-post">
+                    <img src="images/_ (4).jpeg" alt="Gift box">
+                    <div class="post-overlay">
+                        <div class="post-actions">
+                            <button class="action-btn like-btn">
+                                <i class="far fa-heart"></i>
+                                <span>15</span>
+                            </button>
+                            <button class="action-btn wishlist-btn">
+                                <i class="far fa-bookmark"></i>
+                                <span>Add to Wishlist</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post 5 -->
+                <div class="profile-post">
+                    <img src="images/_ copy.jpeg" alt="Gift box">
+                    <div class="post-overlay">
+                        <div class="post-actions">
+                            <button class="action-btn like-btn">
+                                <i class="far fa-heart"></i>
+                                <span>27</span>
+                            </button>
+                            <button class="action-btn wishlist-btn">
+                                <i class="far fa-bookmark"></i>
+                                <span>Add to Wishlist</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post 6 -->
+                <div class="profile-post">
+                    <img src="images/_.jpeg" alt="Gift box">
+                    <div class="post-overlay">
+                        <div class="post-actions">
+                            <button class="action-btn like-btn">
+                                <i class="far fa-heart"></i>
+                                <span>41</span>
+                            </button>
+                            <button class="action-btn wishlist-btn">
+                                <i class="far fa-bookmark"></i>
+                                <span>Add to Wishlist</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <p>© 2025 WOD — All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
