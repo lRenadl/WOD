@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friend's Wishlist - @giftlover</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* ================================================= */
+        /* FRIEND PROFILE / WISHLIST ACTIONS (Reserve & Contribute) */
+        /* ================================================= */
+
+        .friend-action-btn {
+            background: #f5c0d3;
+            border: none;
+            border-radius: 25px;
+            color: white;
+            padding: 8px 20px;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(255, 111, 97, 0.4);
+        }
+
+        .friend-action-btn:hover {
+            background: #e55c50;
+            transform: translateY(-2px);
+        }
+
+
+        .post-actions.friend-wishlist-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 15px;
+            position: absolute; 
+            bottom: 50px; 
+            width: 90%; 
+            left: 50%;
+            transform: translateX(-50%);
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .action-btn {
+            text-decoration: none; 
+            min-width: 100%;
+            padding: 12px 20px;
+            font-weight: 700;
+            font-size: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            display: flex; 
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .reserve-btn {
+             background-color: rgba(252, 214, 227, 0.8);
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .reserve-btn:hover {
+            background: #0056b3;
+            transform: translateY(-2px);
+        }
+
+        .contribute-btn {
+            background-color: rgba(252, 214, 227, 0.8);
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .contribute-btn:hover {
+            background: #1e7e34;
+            transform: translateY(-2px);
+        }
+
+        .profile-post:hover .post-overlay {
+            opacity: 1;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0) 100%);
+        }
+        
+        .reserved-item .reserve-btn {
+            background-color: #6c757d; 
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+
+        .reserved-item .reserve-btn span::before {
+            
+            margin-right: 5px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-icons">
+            <a href="#" class="sidebar-icon logo-icon">
+                <img src="images/Box Logo (2) 2.png" alt="WOD Logo" class="sidebar-logo" />
+            </a>
+            <a href="posts.html" class="sidebar-icon">
+                <img src="images/icons/home.svg" alt="Home" class="sidebar-icon-img" />
+            </a>
+            <a href="calendar.html" class="sidebar-icon">
+                <img src="images/icons/calender.svg" alt="calendar" class="sidebar-icon-img" />
+            </a>
+            <a href="profile.html" class="sidebar-icon">
+                <img src="images/icons/profile.svg" alt="Profile" class="sidebar-icon-img" />
+            </a>
+                    <a href="group_dashboard.html" class="sidebar-icon">
+                        <img src="images/icons/groups.png" alt="Groups" class="sidebar-icon-img" />
+                    </a>
+        </div>
+    </div>
+
+    <main class="profile-container">
+        <section class="profile-header">
+            <div class="profile-pic-container">
+                <img src="images/profile-pic.jpg" alt="Profile Picture" class="profile-pic">
+            </div>
+
+            <div class="profile-info">
+                <div class="profile-name-section">
+                    <h1 class="username">@SarahJohnson</h1>
+                    <button class="friend-action-btn">Add Friend</button>
+                </div>
+
+                <h2 class="full-name">Sarah Johnson</h2>
+                <p class="bio">Gift enthusiast & creative wrapping ideas. Sharing my favorite finds and DIY gift boxes!
+                    🎁✨</p>
+
+                <div class="profile-stats">
+                    <div class="stat">
+                        <span class="stat-number">24</span>
+                        <span class="stat-label">Posts</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">86</span>
+                        <span class="stat-label">Friends</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <header class="wishlist-header">
+            <div class="wishlist-header-content">
+                <h1>My Wishlist</h1>
+                <p>All the gifts I'm dreaming of 🎁</p>
+                <div class="wishlist-info">2 Items</div>
+            </div>
+          </header>
+
+        <section class="profile-tabs">
+            <div class="tabs-container">
+              <a href="friend-posts.html" class="tab" data-tab="posts">
+                <i class="fas fa-gift"></i>  Posts
+              </a>
+              <a href="friend-wishlist.html" class="tab active" data-tab="wishlist">
+                <i class="fas fa-heart"></i> Wishlist
+              </a>
+              
+            </div>
+          </section>
+
+
+        <section class="profile-posts" id="wishlist-tab">
+            <div class="posts-grid">
+                
+                <div class="profile-post">
+                    <img src="images/_ (1).jpeg" alt="Tulip Bloom Gift Box">
+                    <div class="post-overlay">
+                        <div class="post-actions friend-wishlist-actions">
+                            
+                            <a href="#" class="action-btn reserve-btn">
+                                <i class="fas fa-lock"></i>
+                                <span>Reserve Gift</span>
+                            </a>
+
+                            <a href="group_contribution.html" class="action-btn contribute-btn">
+                                <i class="fas fa-hand-holding-usd"></i>
+                                <span>Contribute to a Gift 🎁</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="wishlist-item-info">
+                        <h3>Tulip Bloom Gift Box</h3>
+                        <p>250 SAR</p>
+                    </div>
+                </div>
+
+                <div class="profile-post reserved-item">
+                    <img src="images/_ (4).jpeg" alt="Bee Happy Cozy Set">
+                    <div class="post-overlay">
+                        <div class="post-actions friend-wishlist-actions">
+                            
+                            <a href="#" class="action-btn reserve-btn">
+                                <i class="fas fa-lock"></i>
+                                <span>Reserved</span>
+                            </a>
+
+                            <a href="group_contribution.html" class="action-btn contribute-btn">
+                                <i class="fas fa-hand-holding-usd"></i>
+                                <span>Contribute to a Gift 🎁</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="wishlist-item-info">
+                        <h3>Bee Happy Cozy Set</h3>
+                        <p>120 SAR</p>
+                    </div>
+                </div>
+
+                </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 WOD — All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
