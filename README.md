@@ -59,13 +59,11 @@ Each table is designed for scalability and future integration with e-commerce AP
 
 ## 👩‍💻 Team Members
 
-| Name | Student ID | Role |
-|------|-------------|------|
-| **Renad Al Owais** | 441201682 | UI/UX Designer & Frontend Developer |
-| **Asil Mohammed** | 441201208 | Database Designer |
-| **Jory Ahmed** | 441201502 | Documentation & Testing |
-| **Abeer Al Anoud** | 441202144 | Frontend Developer |
-| **Nora Al Qahtani** | 441200978 | System Analyst |
+- Renad Alowais
+- Ghada Alqahtani
+- Shooq Alawdah
+- Noura Alamro
+- Reema Alraqibah
 
 ---
 
